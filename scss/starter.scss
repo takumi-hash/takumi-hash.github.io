@@ -25,6 +25,7 @@
 // Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
 
 // Toggle global options
+$spacer: 1.5rem;
 $enable-gradients: true;
 $enable-shadows: true;
 
@@ -39,6 +40,12 @@ $body-color: #333;
 $body-bg: #fff;
 $border-radius: .4rem;
 $success: #7952b3;
+
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+$font-family-serif: 'Noto Serif JP', serif;
+$font-family-base: $font-family-serif;
+$font-size-base: 1rem;
 
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
@@ -83,16 +90,43 @@ $success: #7952b3;
 //
 // Custom styles
 //
-
 @import "icon-list";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght&display=swap');
-
-// Typography
-$font-family-sans-serif: 'Noto Serif JP', serif;
 
 body {
-  padding: 3rem 1.5rem;
-  font-family: serif;
+  padding: 0rem;
+  padding-bottom: 3rem;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 300;
+}
+div {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.logo{
+    font-family: 'Times New Roman';
+    font-size: 2.5rem;
+    word-spacing: -50%;
+}
+.w200 {
+    font-weight: 200;
+}
+.w300 {
+    font-weight: 300;
+}
+.w400 {
+    font-weight: 400;
+}
+.w500 {
+    font-weight: 500;
+}
+.w600 {
+    font-weight: 600;
+}
+.w700 {
+    font-weight: 700;
+}
+.w900 {
+    font-weight: 900;
 }
 
 // Style Bootstrap icons
@@ -100,6 +134,6 @@ body {
   fill: currentColor;
 }
 
-.jumbotron {
+.bg-2 {
     background-color: #fafafa;
 }
