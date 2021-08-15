@@ -26,8 +26,8 @@
 
 // Toggle global options
 $spacer: 1.5rem;
-$enable-gradients: true;
-$enable-shadows: true;
+$enable-gradients: false;
+$enable-shadows: false;
 
 $primary: #ef5b5b;
 $secondary: #ffdbdb;
@@ -103,8 +103,9 @@ div {
     padding-bottom: 0.5rem;
 }
 .jumbotron{
-    background-image: url("../images/cover_dark.jpg");
+    background-image: url("../images/cat_dark.jpg");
     background-size: cover;
+    background-position: center;
     color: #fff;
 }
 .logo{
