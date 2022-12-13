@@ -18,7 +18,7 @@
 //
 // Import all of Bootstrap's CSS
 
-@import "bootstrap/scss/bootstrap";
+// @import "bootstrap/scss/bootstrap";
 
 // Option 2
 //
@@ -143,3 +143,6 @@ div {
 .bg-2 {
     background-color: #fafafa;
 }
+
+
+@import "bootstrap/scss/bootstrap";
