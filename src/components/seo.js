@@ -1,5 +1,6 @@
 import React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
+import ogImage from '../images/cat_dark.webp'
 
 const Seo = ({ title, description, pathname, children }) => {
   const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername } = useSiteMetadata()
@@ -7,7 +8,7 @@ const Seo = ({ title, description, pathname, children }) => {
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image}`,
+    image: `${siteUrl}${image || ``}`,
     url: `${siteUrl}${pathname || ``}`,
     twitterUsername,
   }
