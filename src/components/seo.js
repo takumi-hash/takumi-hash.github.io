@@ -27,7 +27,7 @@ const Seo = ({ title, description, pathname, children }) => {
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:creator" content={seo.twitterUsername} />
-      <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CPZMM7HGSW"></script>
+      <script src="https://www.googletagmanager.com/gtag/js?id=G-CPZMM7HGSW" defer></script>
       {children}
     </>
   )
