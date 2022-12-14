@@ -1,6 +1,9 @@
 import * as React from "react";
-import { Link } from "gatsby";
+import Header from "../components/header";
 import Footer from "../components/footer";
+import Layout from "../components/layout";
+import Section from "../components/section";
+import Button from "../components/button";
 
 const NotFoundPage = () => {
   return (
@@ -29,4 +32,4 @@ const NotFoundPage = () => {
 
 export default NotFoundPage;
 
-export const Head = () => <title>Not found</title>;
+export const Head = () => <title>404 Not found</title>;
