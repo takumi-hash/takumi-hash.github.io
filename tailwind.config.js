@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "sub": "#fafafa",
-        "salmon": "#ef5b5b",
+        "sub": "#FAFAFA",
+        "salmon": "#D83439" //"#ef5b5b",
       }
     },
   },
