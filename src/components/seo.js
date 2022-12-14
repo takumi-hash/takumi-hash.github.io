@@ -1,9 +1,14 @@
-import React from "react"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
-import ogImage from '../images/cat_dark.webp'
+import React from "react";
+import { useSiteMetadata } from "../hooks/use-site-metadata";
 
 const Seo = ({ title, description, pathname, children }) => {
-  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername } = useSiteMetadata()
+  const {
+    title: defaultTitle,
+    description: defaultDescription,
+    image,
+    siteUrl,
+    twitterUsername,
+  } = useSiteMetadata();
 
   const seo = {
     title: title || defaultTitle,
@@ -11,7 +16,7 @@ const Seo = ({ title, description, pathname, children }) => {
     image: `${siteUrl}${image || ``}`,
     url: `${siteUrl}${pathname || ``}`,
     twitterUsername,
-  }
+  };
 
   return (
     <>
@@ -31,7 +36,7 @@ const Seo = ({ title, description, pathname, children }) => {
       {/* <script src="https://www.googletagmanager.com/gtag/js?id=G-CPZMM7HGSW" defer></script> */}
       {children}
     </>
-  )
-}
+  );
+};
 
-export default Seo
+export default Seo;
