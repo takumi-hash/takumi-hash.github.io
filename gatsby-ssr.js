@@ -1,3 +1,6 @@
 exports.onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: "ja" })
+  setHtmlAttributes({
+      lang: "ja",
+      prefix: "og: https://ogp.me/ns#"
+  })
 }

@@ -1,10 +1,12 @@
 import * as React from "react"
 import Header from '../components/header'
 import Footer from '../components/footer'
-import Jumbotron from "../components/jumbotron.js"
-import Layout from "../components/layout.js"
-import Section  from "../components/section.js"
+import Jumbotron from "../components/jumbotron"
+import Layout from "../components/layout"
+import Section  from "../components/section"
 import Button from "../components/button"
+import Seo from "../components/seo"
+import Qrcode from "../images/ig_code.webp"
 
 const IndexPage = () => {
   return (
@@ -13,7 +15,11 @@ const IndexPage = () => {
       <Jumbotron/>
       <Layout>
         <Section>
-          <h2 className="text-3xl my-3">Heading Text</h2>
+          <h2 className="text-3xl my-3">活動紹介</h2>
+          <p>
+            Instagramアカウント<a className="text-salmon" href="https://www.instagram.com/futako_book_club/">@futako_book_club</a>で活動の様子をご覧ください。
+          </p>
+          <img className="object-contain h-48" src={ Qrcode } alt="Futako Book Club Instagram" />
         </Section>
         <Section color="bg-sub">
           <h2 className="text-3xl my-3">参加するには</h2>
@@ -38,6 +44,16 @@ const IndexPage = () => {
           </div>
         </Section>
         <Section>
+          <h2 className="text-3xl my-3">モデレータ</h2>
+          <p>私たちが主宰しています。</p>
+          <ul className="list-disc px-5">
+            <li>Takumi Hashimoto (Twitter: <a className="text-salmon" href="https://www.twitter.com/tak_kafka/">@tak_kafka</a>)
+            </li>
+            <li>Masataka Ushijima</li>
+          </ul>
+        </Section>
+        <Section color="bg-sub">
+          <h2 className="text-3xl my-3">ブッククラブで扱った作品</h2>
           <table className="table-auto w-full text-left">
             <thead className="bg-slate-100">
                 <tr>
@@ -188,6 +204,8 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => {
-{/* <title>{title}</title> */}
-}
+export const Head = () => (
+  <>
+  <Seo>  </Seo>
+  </>
+)

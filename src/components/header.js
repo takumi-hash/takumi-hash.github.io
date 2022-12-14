@@ -1,26 +1,18 @@
 import { Link } from "@reach/router"
 import * as React from "react"
 
-const links =   [{
-    text: "About",
-    url: "/about",
-  },
-    {
-    text: "参加方法",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-  },]
-
 const Header = () => {
     return (
         <header className="p-5">
             <nav className="flex">
                 <h1 className=""><Link to="/">Futako Book Club</Link></h1>
                 <div className="grow"></div>
-                {links.map((link, index) => (
-                  <div key={index} className="px-5">
-                        <Link to={link.url}>{link.text}</Link>
-                  </div>
-                ))}
+                <div className="pl-5">
+                  <Link to="/about">About</Link>
+                </div>
+                <div className="pl-5">
+                  <a href="https://anchor.fm/futakobookcast/" target="_blank" rel="noopener noreferrer">Podcast</a>
+                </div>
             </nav>
         </header>
     )
