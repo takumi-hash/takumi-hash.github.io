@@ -1,49 +1,32 @@
-import * as React from "react"
-import { Link } from "gatsby"
-
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import * as React from "react";
+import { Link } from "gatsby";
+import Footer from "../components/footer";
 
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <>
+      <Header />
+      <Layout>
+        <Section>
+          <h2 className="my-3 text-3xl">404 Not found.</h2>
+          <p>お探しのページは見つかりませんでした。</p>
+          <blockquote className="m-3 bg-slate-50 p-3 text-gray-700">
+            <span className="italic">
+              ❝私はまたどこか別の場所で、ドアだか、雨傘だか、ドーナッツだか、象さんだかのかたちをしたものを探し求めることになるだろう。どこであれ、それが見つかりそうな場所で。❞
+              <br />
+            </span>
+            —『どこであれそれが見つかりそうな場所で』（村上春樹 著）
+          </blockquote>
+          <div className="my-5">
+            <Button text="トップに戻る" linkto="/"></Button>
+          </div>
+        </Section>
+      </Layout>
+      <Footer />
+    </>
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
 
-export const Head = () => <title>Not found</title>
+export const Head = () => <title>Not found</title>;
