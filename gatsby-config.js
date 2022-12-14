@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Futako Book Club`,
     siteUrl: `https://www.futakobookclub.com`,
-    description: `二子玉川で活動する読書会、Futako Book Clubの公式サイトです。`,
+    description: `村上春樹さんの作品について語り合う読書会、Futako Book Clubの公式サイトです。`,
     twitterUsername: `@tak_kafka`,
     image: `/cat_dark.webp`,
   },

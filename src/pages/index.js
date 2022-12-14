@@ -47,7 +47,7 @@ const IndexPage = () => {
           <h2 className="text-3xl my-3">モデレータ</h2>
           <p>私たちが主宰しています。</p>
           <ul className="list-disc px-5">
-            <li>Takumi Hashimoto (Twitter: <a className="text-salmon" href="https://www.twitter.com/tak_kafka/">@tak_kafka</a>)
+            <li>Takumi Hashimoto (Twitter: <a className="text-salmon" href="https://www.twitter.com/tak_kafka/" target="_blank" rel="noopener noreferrer">@tak_kafka</a>)
             </li>
             <li>Masataka Ushijima</li>
           </ul>

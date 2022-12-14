@@ -9,6 +9,11 @@
     font-family: "Times New Roman", "Noto Serif CJK JP",
       theme("fontFamily.serif");
     color: #333;
+    -ms-overflow-style: none; /* IE, Edge 対応 */
+    scrollbar-width: none; /* Firefox */
+  }
+  html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari 対応 */
   }
 
   p {
