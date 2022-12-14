@@ -2,7 +2,7 @@ import * as React from "react"
 
 const Layout = (props) => {
     return (
-        <div className="container mx-auto">
+        <div className="flex flex-col">
             {props.children}
         </div>
     )

@@ -8,8 +8,10 @@ module.exports = {
     extend: {
       colors: {
         "sub": "#fafafa",
+        "salmon": "#ef5b5b",
       }
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }

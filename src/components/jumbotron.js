@@ -2,7 +2,7 @@ import * as React from "react"
 
 const Jumbotron = () => {
     return (
-        <div className="p-5 flex items-center h-96 bg-[url('../images/cat_dark.webp')] bg-cover bg-no-repeat bg-center">
+        <div className="px-[8%] flex items-center h-96 bg-[url('../images/cat_dark.webp')] bg-cover bg-no-repeat bg-center">
             <div className="flex flex-col space-y-4">
                 <h1 className="text-4xl text-white">Futako Book Club</h1>
                 <div>

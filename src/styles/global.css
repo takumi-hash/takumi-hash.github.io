@@ -14,4 +14,12 @@
   p {
     padding-bottom: theme("spacing.4");
   }
+
+  table * {
+    padding: theme("spacing.2") theme("spacing.4");
+  }
+
+  tr {
+    border-bottom: 0.5px solid theme("colors.gray.300");
+  }
 }
