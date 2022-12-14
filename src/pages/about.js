@@ -24,7 +24,7 @@ const AboutPage = () => {
           <p className="pb-4">物語を通じて人とつながる体験をしてみたい方はぜひ参加してみてください。</p>
           <p>「どんなことを話しているのか気になる」方は、Podcastもどうぞ。Book Clubで話した内容をもとに、村上春樹さんの作品に関するおもしろいトピックをお話ししています。</p>
           <div className="my-5">
-            <Button text="Podcastを聴いてみる" linkto="https://docs.google.com/forms/d/e/1FAIpQLSdUaKeYQ8UB6tjLoGimejsqPUMI1VBQYulMeaz-67yOlx5nrg/viewform?usp=sf_link"></Button>
+            <Button text="Podcastを聴いてみる" linkto="https://anchor.fm/futakobookcast/"></Button>
           </div>
         </Section>
         <Section color="bg-sub">
