@@ -19,7 +19,7 @@ const IndexPage = () => {
           <p>
             Instagramアカウント<a className="text-salmon" href="https://www.instagram.com/futako_book_club/">@futako_book_club</a>で活動の様子をご覧ください。
           </p>
-          <img className="object-contain h-48" src={ Qrcode } alt="Futako Book Club Instagram" />
+          <img width="800" height="800" className="object-contain h-48" src={ Qrcode } alt="Futako Book Club Instagram" />
         </Section>
         <Section color="bg-sub">
           <h2 className="text-3xl my-3">参加するには</h2>
