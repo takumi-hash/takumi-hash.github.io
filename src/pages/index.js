@@ -23,33 +23,13 @@ const IndexPage = () => {
         </Section>
         <Section color="bg-sub">
           <h2 className="text-3xl my-3">参加するには</h2>
-          <p>参加される方は、下記ご確認の上ご連絡ください。</p>
-          <ul className="list-disc px-5">
-            <li>開催頻度：隔週土曜日　だいたい11:00~14:00</li>
-            <li>場所：二子玉川駅周辺
-              <ul>
-                <li>参加者の方には場所を個別連絡いたします。</li>
-                <li>人数に応じて場所を確保しておりますので、直前での予定変更は極力ご遠慮いただけますと幸いです。</li>
-              </ul>
-            </li>
-            <li>参加費用：約1,000円／回（会場費用に応じて多少変動）
-              <ul>
-                <li>会場費用等に充てさせていただきます。</li>
-              </ul>
-            </li>
-            <li>参加される際は必ずマスクを着用してください。</li>
-          </ul>
-          <div className="my-5">
-            <Button text="参加希望はこちらから" linkto="https://docs.google.com/forms/d/e/1FAIpQLSdUaKeYQ8UB6tjLoGimejsqPUMI1VBQYulMeaz-67yOlx5nrg/viewform?usp=sf_link"></Button>
-          </div>
+          <p className="font-bold">現在、当ページにおける新規メンバー募集は中止しております。</p>
         </Section>
         <Section>
           <h2 className="text-3xl my-3">モデレータ</h2>
-          <p>私たちが主宰しています。</p>
           <ul className="list-disc px-5">
             <li>Takumi Hashimoto (Twitter: <a className="text-salmon" href="https://www.twitter.com/tak_kafka/" target="_blank" rel="noopener noreferrer">@tak_kafka</a>)
             </li>
-            <li>Masataka Ushijima</li>
           </ul>
         </Section>
         <Section color="bg-sub">
