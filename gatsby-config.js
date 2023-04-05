@@ -10,6 +10,7 @@ module.exports = {
     image: `/ogp.webp`,
   },
   plugins: [
+    "gatsby-plugin-minify",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-postcss",
