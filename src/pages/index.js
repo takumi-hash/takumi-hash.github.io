@@ -192,6 +192,7 @@ const IndexPage = () => {
               </tr>
               <tr>
                 <td>めくらやなぎと眠る女</td>
+                <td>2023/08/30</td>
               </tr>
               <tr>
                 <td>女のいない男たち</td>
